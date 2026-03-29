@@ -1,1 +1,12 @@
 
+{
+  "name": "backend-english-app",
+  "version": "1.0.0",
+  "main": "servidor.js",
+  "scripts": {
+    "start": "node servidor.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
