@@ -1,6 +1,9 @@
 const express = require("express");
+const cors = require("cors");
+
 const app = express();
 
+app.use(cors());
 app.use(express.json());
 
 app.get("/", (req, res) => {
@@ -14,7 +17,7 @@ app.post("/validate-license", (req, res) => {
     return res.json({ valid: true });
   }
 
-  res.json({ valid: false });
+  return res.json({ valid: false });
 });
 
 const PORT = process.env.PORT || 3000;
